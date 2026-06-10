@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffcb05;
+  --color-primary-foreground: #000;
+  --color-background: #fff5eb;
+  --color-foreground: #000;
+  --color-card: #fff;
+  --color-card-foreground: #000;
+  --color-popover: #fff;
+  --color-popover-foreground: #000;
+  --color-secondary: #f5f0ec;
+  --color-secondary-foreground: #111;
+  --color-muted: #f5f0ec;
+  --color-muted-foreground: #666;
+  --color-accent: #ffcb05;
+  --color-accent-foreground: #000;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fff;
+  --color-border: #e5dcd4;
+  --color-input: #e5dcd4;
+  --color-ring: #ffcb05;
+  --color-success: #22c55e;
+  --color-success-foreground: #fff;
+  --color-warning: #ffcb05;
+  --color-warning-foreground: #000;
+  --color-info: #38bdf8;
+  --color-info-foreground: #fff;
+  --color-chart-1: #ffcb05;
+  --color-chart-2: #333;
+  --color-chart-3: #38bdf8;
+  --color-chart-4: #22c55e;
+  --color-chart-5: #f97316;
+  --color-sidebar: #fff5eb;
+  --color-sidebar-foreground: #000;
+  --color-sidebar-primary: #000;
+  --color-sidebar-primary-foreground: #ffcb05;
+  --color-sidebar-accent: #f5f0ec;
+  --color-sidebar-accent-foreground: #000;
+  --color-sidebar-border: #e5dcd4;
+  --color-sidebar-ring: #ffcb05;
+  --radius: 0.75rem;
+}
+
+/* ── Font faces ── */
+@font-face {
+  font-family: "MTN Brighter Sans";
+  src: url("/fonts/MTNBrighterSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MTN Brighter Sans";
+  src: url("/fonts/MTNBrighterSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MTN Brighter Sans";
+  src: url("/fonts/MTNBrighterSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MTN Brighter Sans";
+  src: url("/fonts/MTNBrighterSans-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MTN Brighter Sans";
+  src: url("/fonts/MTNBrighterSans-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MTN Brighter Sans";
+  src: url("/fonts/MTNBrighterSans-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ── Base styles ── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "MTN Brighter Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
